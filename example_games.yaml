@@ -1,0 +1,40 @@
+- players:
+    player1: merlin
+    player2: morgana
+    player3: percival
+    player4: servant
+    player5: assassin
+  quests:
+    - status: success
+      fails: 0
+      participants:
+        - player1
+        - player2
+    - status: fail
+      fails: 1
+      participants:
+        - player1
+        - player2
+        - player4
+    - status: fail
+      fails: 2
+      participants:
+        - player2
+        - player4
+        - player5
+    - status: success
+      fails: 0
+      participants:
+        - player1
+        - player3
+        - player4
+    - status: success
+      fails: 0
+      participants:
+        - player1
+        - player3
+        - player4
+
+  result:
+    winner: evil
+    type: assassination
